@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Part } from '../models/part'
 import { Col, Container, Row } from 'react-bootstrap'
-import { ProcessEditor } from './ProcessEditor'
+import { FastenerEditor } from './FastenerEditor'
 
 
 interface PartEditorProperties {
@@ -16,7 +16,7 @@ export function PartEditor(props: PartEditorProperties) {
                 <Col>{props.part.name}</Col>
             </Row>
             <Row>
-                <ProcessEditor />
+                <FastenerEditor />
             </Row>
         </Container>
     )

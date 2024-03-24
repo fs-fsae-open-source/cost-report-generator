@@ -16,14 +16,12 @@ export interface Material {
     name: string;
 }
 
+export interface FastenerType {
+    description: string;
+}
+
 export interface Fastener {
-    name: string;
-    // size1?: number;
-    // unit1?: string;
-    // size2?: number;
-    // unit2?: string;
-    // c1?: number;
-    // c2?: number;
-    // priceEqn: string;
-    // comment: string;
+    use: string;
+    quantity: number;
+    type: FastenerType;
 }
