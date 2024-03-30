@@ -66,7 +66,10 @@ export function GenericTable<T>(props: GenericTableProperties<T>) {
                     <td>JSON</td>
                 </tr>
             </thead>
-            {rows}
+            <tbody>
+                {rows}
+            </tbody>
+
         </Table>
     );
 }
