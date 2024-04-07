@@ -17,7 +17,8 @@ export interface Material {
 }
 
 export interface FastenerType {
-    description: string;
+    fastener: string;
+    comment: string;
 }
 
 export interface Fastener {
