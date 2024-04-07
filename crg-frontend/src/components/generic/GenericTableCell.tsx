@@ -10,7 +10,7 @@ interface GenericTableCellProperties {
 export function GenericTableCell(props: GenericTableCellProperties) {
     const editable = props.editable ?? false;
 
-    const [value, setValue] = useState<string>(props.value);
+    const value = props.value;
 
     function update(data: string) {
         if (editable) {
@@ -26,12 +26,15 @@ export function GenericTableCell(props: GenericTableCellProperties) {
 
     return (
         <td>
-            <Form.Control
-                value={editable ? value : props.value}
-                plaintext={!editable}
-                onChange={(e) => setValue(e.target.value)}
-                onBlur={() => update(value)}
-            />
+            {editable ?
+                <Form.Control
+                    value={value}
+                    plaintext={!editable}
+                    onChange={(e) => update(e.target.value)}
+                />
+                : <>{value}</>
+            }
+
         </td>
     );
 }

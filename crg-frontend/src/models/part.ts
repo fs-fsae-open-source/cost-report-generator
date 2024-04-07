@@ -1,5 +1,6 @@
 export interface Part {
     name: string;
+    fasteners: { [key: number]: Fastener }
 }
 
 export interface Process {
@@ -17,11 +18,12 @@ export interface Material {
 }
 
 export interface FastenerType {
+    id: number;
     fastener: string;
     supplier?: string;
     category?: string;
-    unit1: string;
-    unit2: string;
+    unit1?: string;
+    unit2?: string;
     size1Description?: string;
     size2Description?: string;
     c1?: number;
@@ -30,9 +32,10 @@ export interface FastenerType {
 }
 
 export interface Fastener {
+    id: number,
     use: string;
     size1?: number;
     size2?: number;
     quantity: number;
-    type: FastenerType; // this is probably a fastenerTypeID to link to type idk
+    typeID: number;
 }

@@ -3,6 +3,8 @@ import { Fastener } from "../../models/part";
 import { ColumnInformation } from "../../models/table";
 import { GenericTableCell } from "../generic/GenericTableCell";
 import { Button } from "react-bootstrap";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { removeFastener, updateFastener, updateFastenerField } from "../../slices/crgSlice";
 
 interface FastenerTableRowProperties {
     value: Fastener
@@ -16,31 +18,26 @@ export function FastenerTableRow(props: FastenerTableRowProperties) {
 
     const value = props.value;
 
-    // const [value, setValue] = useState<Fastener>(props.value);
+    const fastenerTypesStore = useAppSelector((state) => state.crg.fastenerTypes);
+    const dispatch = useAppDispatch();
 
 
-    const displayData = { Name: value.type.fastener, Use: value.use };
+    const fastenerType = (value.typeID in fastenerTypesStore) ? fastenerTypesStore[value.typeID] : null;
+
+    const displayData = { ID: value.id, Name: fastenerType?.fastener ?? "", Use: value.use };
 
     function remove() {
-        console.log("remove", value);
-        props.updateFastener?.(props.index, null);
-    }
-
-    function update() {
-        console.log("update", value);
-        props.updateFastener?.(props.index, value);
+        dispatch(removeFastener(value.id));
     }
 
     function updateField(fieldValue: string, key?: string) {
         console.log("updateField", fieldValue, key);
         const newItem: Fastener = { ...value } as Fastener;
         if (key) {
+            dispatch(updateFastenerField({ id: value.id, key: key, value: fieldValue }));
+            console.log("key", value[key as keyof typeof value])
             newItem[key as keyof typeof newItem] = fieldValue;
         }
-
-        props.updateFastener?.(props.index, newItem);
-
-        // setValue(newItem);
     }
 
     return (
@@ -60,9 +57,6 @@ export function FastenerTableRow(props: FastenerTableRowProperties) {
                     />
                 )
             })}
-            <td>
-                <Button onClick={update}>Update</Button>
-            </td>
             <td>
                 <Button onClick={remove}>Remove</Button>
             </td>

@@ -1,17 +1,19 @@
 import { Button, Col, Container, Row, Table } from "react-bootstrap";
 import { FastenerType } from "../../models/part";
+import { useAppSelector } from "../../app/hooks";
 
-
-const fastenerTypes: FastenerType[] = [
-    { fastener: "Steel Loop Straps, Rubber-Cushioned", comment: "Comment" },
-    { fastener: "Galvanized Steel Loop Straps", comment: "Comment" }
-];
 
 interface FastenerTypeLibraryProperties {
     addFastenerCallback?(fastenerType: FastenerType): void;
 }
 
 export function FastenerTypeLibrary(props: FastenerTypeLibraryProperties) {
+
+    const fastenerTypesStore = useAppSelector((state) => state.crg.fastenerTypes);
+    const fastenerTypes: FastenerType[] = Object.values(fastenerTypesStore).map((item, index) => {
+        return item;
+    });
+
 
     const columns: string[] = [
         "Fastener",

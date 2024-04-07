@@ -14,11 +14,10 @@ export function FastenerTable(props: FastenerTableProperties) {
     const data = props.data ?? [];
 
     const columnInfo: ColumnInformation[] = [
+        { name: "ID", editable: false },
         { name: "Name", editable: false },
         { name: "Use", editable: true, key: "use" }
     ]
-
-    console.log("data", data);
 
     return (
         <Table bordered>
@@ -36,7 +35,6 @@ export function FastenerTable(props: FastenerTableProperties) {
             </thead>
             <tbody>
                 {data.map((item, index) => {
-                    console.log("item", index, item);
                     return (
                         <FastenerTableRow
                             key={index}

@@ -4,20 +4,27 @@ import { GenericTable } from "./generic/GenericTable";
 import { useState } from "react";
 import { FastenerTypeLibrary } from "./Fastener/FastenerTypeLibrary";
 import { FastenerTable } from "./Fastener/FastenerTable";
+import { useAppDispatch, useAppSelector } from "../app/hooks";
+
+import { addFastener } from "../slices/crgSlice";
 
 interface FastenerEditorProperties {
 
 }
 
-const fastenerTypes: FastenerType[] = [
-    { description: "Steel Loop Straps, Rubber-Cushioned", comment: "Comment" },
-    { description: "Galvanized Steel Loop Straps", comment: "Comment" }
-];
-
-
 export function FastenerEditor(props: FastenerEditorProperties) {
+
+    const fasteners = useAppSelector((state) => state.crg.currentPart.fasteners);
+
+    const dispatch = useAppDispatch();
+
+
+    const fastenerData: Fastener[] = Object.values(fasteners).flatMap((item, index) => {
+        return item;
+    });
+
     const typeKeys = [
-        "description"
+        "fastener"
     ];
 
     const fastenerKeys = [
@@ -32,63 +39,51 @@ export function FastenerEditor(props: FastenerEditorProperties) {
         quantity: number;
     }
 
-    const [fasteners, setFasteners] = useState<Fastener[]>([]);
-
     console.log("fasteners", fasteners);
 
-    const fastenerData: FastenerViewerItem[] = fasteners.map((item, index) => {
-        return {
-            description: item.type.description,
-            use: item.use,
-            quantity: item.quantity
-        }
-    })
 
     function fastenerViewerClickHandler(action: string, data: FastenerViewerItem, index: number) {
-        if (action === "Remove") {
-            const newData = fasteners.slice(0, index).concat(fasteners.slice(index + 1));
-            console.log(index, newData)
-            setFasteners(newData);
-        }
+        // if (action === "Remove") {
+        //     const newData = fasteners.slice(0, index).concat(fasteners.slice(index + 1));
+        //     console.log(index, newData)
+        //     setFasteners(newData);
+        // }
     }
 
     function fastenerLibraryClickHandler(action: string, data: FastenerType, index: number) {
         if (action === "Add") {
-            const newFastener: Fastener = {
-                use: "",
-                quantity: 0,
-                type: data
-            };
-            setFasteners([...fasteners, newFastener]);
+
+            // const newFastener: Fastener = {
+            //     use: "",
+            //     quantity: 0,
+            //     type: data
+            // };
+            // setFasteners([...fasteners, newFastener]);
         }
     }
 
     function updateFastenerCallback(index: number, data: Fastener) {
-        setFasteners(value => {
-            return value.flatMap((item, idx) => {
-                if (idx == index) {
-                    if (data === null) {
-                        // remove this item
-                        return [];
-                    } else {
-                        // replace it with the new data
-                        return data;
-                    }
-                } else {
-                    // keep existing item
-                    return item;
-                }
-            })
-        })
+        // setFasteners(value => {
+        //     return value.flatMap((item, idx) => {
+        //         if (idx == index) {
+        //             if (data === null) {
+        //                 // remove this item
+        //                 return [];
+        //             } else {
+        //                 // replace it with the new data
+        //                 return data;
+        //             }
+        //         } else {
+        //             // keep existing item
+        //             return item;
+        //         }
+        //     })
+        // })
     }
 
-    function addFastener(data: FastenerType) {
-        const newFastener: Fastener = {
-            use: "",
-            quantity: 0,
-            type: data
-        };
-        setFasteners([...fasteners, newFastener]);
+    function addFastenerCallback(data: FastenerType) {
+        dispatch(addFastener(data.id));
+        console.log(addFastener(data.id))
     }
 
     return (
@@ -100,28 +95,12 @@ export function FastenerEditor(props: FastenerEditorProperties) {
             </Row>
             <Row>
                 <Col>
-                    <FastenerTable data={fasteners} updateFastenerCallback={updateFastenerCallback} />
+                    <FastenerTable data={fastenerData} updateFastenerCallback={updateFastenerCallback} />
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <FastenerTypeLibrary addFastenerCallback={addFastener} />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Container fluid>
-                        <Row>
-                            <Col>
-                                <h3>Fastener Library</h3>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <GenericTable keys={typeKeys} data={fastenerTypes} buttons={["Add"]} buttonCallback={fastenerLibraryClickHandler} />
-                            </Col>
-                        </Row>
-                    </Container>
+                    <FastenerTypeLibrary addFastenerCallback={addFastenerCallback} />
                 </Col>
             </Row>
         </Container>
