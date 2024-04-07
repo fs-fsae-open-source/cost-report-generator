@@ -18,11 +18,21 @@ export interface Material {
 
 export interface FastenerType {
     fastener: string;
+    supplier?: string;
+    category?: string;
+    unit1: string;
+    unit2: string;
+    size1Description?: string;
+    size2Description?: string;
+    c1?: number;
+    c2?: number;
     comment: string;
 }
 
 export interface Fastener {
     use: string;
+    size1?: number;
+    size2?: number;
     quantity: number;
-    type: FastenerType;
+    type: FastenerType; // this is probably a fastenerTypeID to link to type idk
 }

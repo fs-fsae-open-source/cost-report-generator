@@ -39,7 +39,7 @@ export function FastenerTable(props: FastenerTableProperties) {
                     console.log("item", index, item);
                     return (
                         <FastenerTableRow
-                            key={item}
+                            key={index}
                             index={index}
                             value={item}
                             columnInfo={columnInfo}
