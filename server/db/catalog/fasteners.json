@@ -10,8 +10,7 @@
         "Size2": null,
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": null,
+        "Formula": "None",
         "Comments": null
     },
     {
@@ -25,8 +24,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 0.6,
         "C2": 0.005,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 255 Mpa.  Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -40,8 +38,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 0.4,
         "C2": 0.002,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "For any polyamide grade bolt."
     },
     {
@@ -55,8 +52,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 1.0,
         "C2": 0.01,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 540 Mpa.   Special varities included (drilled head, locking, etc.)"
     },
     {
@@ -70,8 +66,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 0.6,
         "C2": 0.0024,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 670 Mpa.   Special varities included (drilled head, locking, etc.)"
     },
     {
@@ -85,8 +80,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 0.8,
         "C2": 0.003,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 830 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -100,8 +94,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 1.0,
         "C2": 0.004,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 1030 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -115,8 +108,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 1.25,
         "C2": 0.005,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 1170 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -130,8 +122,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 1.25,
         "C2": 0.005,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Material AISI304, A2-XX, any Strength class. Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -145,8 +136,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 1.3,
         "C2": 0.006,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Material AISI316, A4-XX, any Strength class. Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -160,8 +150,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 2.0,
         "C2": 0.02,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Size 2 is diameter of shoulder. Special varieties included (drilled head, locking, etc.)."
     },
     {
@@ -175,8 +164,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 2.0,
         "C2": 0.02,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 830 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -190,8 +178,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 2.5,
         "C2": 0.04,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 1100 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -205,8 +192,7 @@
         "Size2": "Screw/Bolt Length (bearing face to end of thread + any overhang)",
         "C1": 6.25,
         "C2": 0.1,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 1240 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -220,8 +206,7 @@
         "Size2": "Full length of stud",
         "C1": 0.6,
         "C2": 0.005,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 255 Mpa.  Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -235,8 +220,7 @@
         "Size2": "Full length of stud",
         "C1": 1.0,
         "C2": 0.01,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 540 Mpa.   Special varities included (drilled head, locking, etc.)"
     },
     {
@@ -250,8 +234,7 @@
         "Size2": "Full length of stud",
         "C1": 0.8,
         "C2": 0.003,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 830 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -265,8 +248,7 @@
         "Size2": "Full length of stud",
         "C1": 1.0,
         "C2": 0.004,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 1030 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -280,8 +262,7 @@
         "Size2": "Full length of stud",
         "C1": 1.25,
         "C2": 0.005,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Strength 1170 Mpa.   Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -295,8 +276,7 @@
         "Size2": "Full length of stud",
         "C1": 1.25,
         "C2": 0.005,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Material AISI304, A2-XX, any Strength class. Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -310,8 +290,7 @@
         "Size2": "Full length of stud",
         "C1": 1.3,
         "C2": 0.006,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": "Material AISI316, A4-XX, any Strength class. Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -325,8 +304,7 @@
         "Size2": " ",
         "C1": 0.003,
         "C2": 0.1,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -340,8 +318,7 @@
         "Size2": " ",
         "C1": 0.002,
         "C2": 0.1,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -355,8 +332,7 @@
         "Size2": " ",
         "C1": 0.005,
         "C2": 0.1,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -370,8 +346,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.1,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -385,8 +360,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.12,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -400,8 +374,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.15,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -415,8 +388,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.18,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -430,8 +402,7 @@
         "Size2": " ",
         "C1": 0.008,
         "C2": 0.12,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -445,8 +416,7 @@
         "Size2": " ",
         "C1": 0.008,
         "C2": 0.15,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -460,8 +430,7 @@
         "Size2": " ",
         "C1": 0.005,
         "C2": 0.18,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -475,8 +444,7 @@
         "Size2": " ",
         "C1": 0.005,
         "C2": 0.36,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any thickness.  Special varities included (Plain, thin, large OD, Serrated, etc.)."
     },
     {
@@ -490,8 +458,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -505,8 +472,7 @@
         "Size2": " ",
         "C1": 0.007,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -520,8 +486,7 @@
         "Size2": " ",
         "C1": 0.007,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -535,8 +500,7 @@
         "Size2": " ",
         "C1": 0.009,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -550,8 +514,7 @@
         "Size2": " ",
         "C1": 0.012,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -565,8 +528,7 @@
         "Size2": " ",
         "C1": 0.015,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -580,8 +542,7 @@
         "Size2": " ",
         "C1": 0.08,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -595,8 +556,7 @@
         "Size2": " ",
         "C1": 0.1,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -610,8 +570,7 @@
         "Size2": " ",
         "C1": 0.06,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -625,8 +584,7 @@
         "Size2": " ",
         "C1": 0.12,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -640,8 +598,7 @@
         "Size2": " ",
         "C1": 0.3,
         "C2": 0.2,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Special varities included (drilled head, locking, etc.)."
     },
     {
@@ -655,8 +612,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.4,
+        "Formula": 0.4,
         "Comments": null
     },
     {
@@ -670,8 +626,7 @@
         "Size2": " ",
         "C1": 0.05,
         "C2": 0.25,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Any type of nut with a retaining or anti-rotation feature for a panel (weldnut, etc.)"
     },
     {
@@ -685,8 +640,7 @@
         "Size2": " ",
         "C1": 0.1,
         "C2": null,
-        "Formula": "=C1*Size1",
-        "Cost": null,
+        "Formula": "C1*Size1",
         "Comments": null
     },
     {
@@ -700,8 +654,7 @@
         "Size2": "Insert Length",
         "C1": 0.00012,
         "C2": 0.036,
-        "Formula": "=(C1*(Size1^2)*Size2)+C2",
-        "Cost": null,
+        "Formula": "(C1*(Size1**2)*Size2)+C2",
         "Comments": null
     },
     {
@@ -715,8 +668,7 @@
         "Size2": "Insert Length",
         "C1": 0.00012,
         "C2": 0.036,
-        "Formula": "=(C1*(Size1^2)*Size2)+C2",
-        "Cost": null,
+        "Formula": "(C1*(Size1**2)*Size2)+C2",
         "Comments": null
     },
     {
@@ -730,8 +682,7 @@
         "Size2": "Exposed Male Length",
         "C1": 1.5,
         "C2": 0.005,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": null
     },
     {
@@ -745,8 +696,7 @@
         "Size2": "Exposed Male Length",
         "C1": 1.5,
         "C2": 0.005,
-        "Formula": "=(C1/105154)*((Size1^2)*Size2*SQRT(size2))+(C2*e^(0.319*Size1))",
-        "Cost": null,
+        "Formula": "(C1/105154)*((Size1**2)*Size2*SQRT(size2))+(C2*e**(0.319*Size1))",
         "Comments": null
     },
     {
@@ -760,8 +710,7 @@
         "Size2": null,
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 4,
+        "Formula": 4,
         "Comments": null
     },
     {
@@ -775,8 +724,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 1.2,
+        "Formula": 1.2,
         "Comments": "Includes 1/4 Turn stud, plate, spring and spring receptacle"
     },
     {
@@ -790,8 +738,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 1.3,
+        "Formula": 1.3,
         "Comments": "Includes 1/4 Turn stud, plate, spring and spring receptacle"
     },
     {
@@ -805,8 +752,7 @@
         "Size2": " ",
         "C1": 0.05,
         "C2": 0.25,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": null
     },
     {
@@ -820,8 +766,7 @@
         "Size2": " ",
         "C1": 0.1,
         "C2": 0.5,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Includes installation cost (riveting)"
     },
     {
@@ -835,8 +780,7 @@
         "Size2": " ",
         "C1": 0.003,
         "C2": null,
-        "Formula": "=C1*Size1",
-        "Cost": null,
+        "Formula": "C1*Size1",
         "Comments": "Same cost for adhesive backed or non-adhesive backed.  Only includes one side of joint (hook side)"
     },
     {
@@ -850,8 +794,7 @@
         "Size2": " ",
         "C1": 0.002,
         "C2": null,
-        "Formula": "=C1*Size1",
-        "Cost": null,
+        "Formula": "C1*Size1",
         "Comments": "Same cost for adhesive backed or non-adhesive backed.  Only includes one side of joint (loop side)"
     },
     {
@@ -865,8 +808,7 @@
         "Size2": " ",
         "C1": 0.01,
         "C2": null,
-        "Formula": "=C1*Size1",
-        "Cost": null,
+        "Formula": "C1*Size1",
         "Comments": "Same cost for adhesive backed or non-adhesive backed.  Only includes one side of joint (loop side)"
     },
     {
@@ -880,8 +822,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.2,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -895,8 +836,7 @@
         "Size2": " ",
         "C1": 0.123,
         "C2": 2.6,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -910,8 +850,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.5,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -925,8 +864,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.02,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -940,8 +878,7 @@
         "Size2": " ",
         "C1": 0.014,
         "C2": null,
-        "Formula": "=(C1*Size1)",
-        "Cost": null,
+        "Formula": "(C1*Size1)",
         "Comments": null
     },
     {
@@ -955,8 +892,7 @@
         "Size2": " ",
         "C1": 0.118,
         "C2": 10.46,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -970,8 +906,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.5,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -985,8 +920,7 @@
         "Size2": " ",
         "C1": 0.002,
         "C2": 0.08,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -1000,8 +934,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.08,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -1015,8 +948,7 @@
         "Size2": " ",
         "C1": 0.004,
         "C2": 0.2,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -1030,8 +962,7 @@
         "Size2": " ",
         "C1": 0.006,
         "C2": 0.2,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -1045,8 +976,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.05,
+        "Formula": 0.05,
         "Comments": "All sizes up to 5mm wire diameter."
     },
     {
@@ -1060,8 +990,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.05,
+        "Formula": 0.05,
         "Comments": "All sizes up to 5mm wire diameter."
     },
     {
@@ -1075,8 +1004,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.1,
+        "Formula": 0.1,
         "Comments": "Any Size"
     },
     {
@@ -1090,8 +1018,7 @@
         "Size2": "Usable Length",
         "C1": 0.001,
         "C2": 14.0,
-        "Formula": "=(C1*(Size1^2)*Size2)+C2",
-        "Cost": null,
+        "Formula": "(C1*(Size1**2)*Size2)+C2",
         "Comments": "Any style pin (T-handle, Ring Grip, etc.)."
     },
     {
@@ -1105,8 +1032,7 @@
         "Size2": " ",
         "C1": 0.009,
         "C2": 0.4,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -1120,8 +1046,7 @@
         "Size2": " ",
         "C1": 0.001,
         "C2": 1.0,
-        "Formula": "=(C1*Size1*Size2)+C2)",
-        "Cost": null,
+        "Formula": "(C1*Size1*Size2)+C2)",
         "Comments": null
     },
     {
@@ -1135,8 +1060,7 @@
         "Size2": " ",
         "C1": 0.0002,
         "C2": 0.013,
-        "Formula": "=(C1*Size1^2)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1**2)+C2",
         "Comments": null
     },
     {
@@ -1150,8 +1074,7 @@
         "Size2": " ",
         "C1": 0.0002,
         "C2": 0.013,
-        "Formula": "=(C1*Size1^2)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1**2)+C2",
         "Comments": null
     },
     {
@@ -1165,8 +1088,7 @@
         "Size2": " ",
         "C1": 0.0002,
         "C2": 0.013,
-        "Formula": "=(C1*Size1^2)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1**2)+C2",
         "Comments": null
     },
     {
@@ -1180,8 +1102,7 @@
         "Size2": " ",
         "C1": 0.0002,
         "C2": 0.025,
-        "Formula": "=(C1*Size1^2)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1**2)+C2",
         "Comments": null
     },
     {
@@ -1195,8 +1116,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.03,
+        "Formula": 0.03,
         "Comments": "Any diameter and length"
     },
     {
@@ -1210,8 +1130,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.02,
+        "Formula": 0.02,
         "Comments": "Any diameter and length"
     },
     {
@@ -1225,8 +1144,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.01,
+        "Formula": 0.01,
         "Comments": "Any diameter and length"
     },
     {
@@ -1240,8 +1158,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.04,
+        "Formula": 0.04,
         "Comments": "Includes all styles and sizes of plastic cable ties including Cable Clamp, Zip Tie, etc."
     },
     {
@@ -1255,8 +1172,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 0.1,
+        "Formula": 0.1,
         "Comments": "Includes all styles and sizes of steel cable ties."
     },
     {
@@ -1270,8 +1186,7 @@
         "Size2": " ",
         "C1": 0.003,
         "C2": 0.4,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Male thread to Female thread standoff. Hex or Recessed drive Cylindrical profiles.  Any diameter and length"
     },
     {
@@ -1285,8 +1200,7 @@
         "Size2": " ",
         "C1": 0.006,
         "C2": 0.4,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Male thread to Female thread standoff. Hex or Recessed drive Cylindrical profiles.  Any diameter and length"
     },
     {
@@ -1300,8 +1214,7 @@
         "Size2": " ",
         "C1": 0.005,
         "C2": 0.4,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Male thread to Female thread standoff. Hex or Recessed drive Cylindrical profiles.  Any diameter and length"
     },
     {
@@ -1315,8 +1228,7 @@
         "Size2": " ",
         "C1": 0.008,
         "C2": 0.4,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Male thread to Female thread standoff. Hex or Recessed drive Cylindrical profiles.  Any diameter and length"
     },
     {
@@ -1330,8 +1242,7 @@
         "Size2": " ",
         "C1": 0.01,
         "C2": 0.4,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": "Male thread to Female thread standoff. Hex or Recessed drive Cylindrical profiles.  Any diameter and length"
     },
     {
@@ -1345,8 +1256,7 @@
         "Size2": " ",
         "C1": null,
         "C2": null,
-        "Formula": null,
-        "Cost": 2.5,
+        "Formula": 2.5,
         "Comments": "AN386 up to 6.35mm"
     },
     {
@@ -1360,8 +1270,7 @@
         "Size2": " ",
         "C1": 0.87,
         "C2": 0.05,
-        "Formula": "=C1*e^(C2*Size1)",
-        "Cost": null,
+        "Formula": "C1*e**(C2*Size1)",
         "Comments": null
     },
     {
@@ -1375,8 +1284,7 @@
         "Size2": " ",
         "C1": 0.03,
         "C2": 0.3,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -1390,8 +1298,7 @@
         "Size2": " ",
         "C1": 0.05,
         "C2": 0.59,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -1405,8 +1312,7 @@
         "Size2": " ",
         "C1": 0.0053,
         "C2": 0.26,
-        "Formula": "=(C1*Size1)+C2",
-        "Cost": null,
+        "Formula": "(C1*Size1)+C2",
         "Comments": null
     },
     {
@@ -1420,8 +1326,7 @@
         "Size2": " ",
         "C1": 0.01,
         "C2": 0.61,
-        "Formula": "=(C1*(Size1^2))+C2",
-        "Cost": null,
+        "Formula": "(C1*(Size1**2))+C2",
         "Comments": "Includes male/female and left/right threads."
     }
 ]

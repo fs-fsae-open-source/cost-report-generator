@@ -36,13 +36,18 @@ for sheet_name in sheet_names:
         for key, value in formatted_dict.items():
             if isinstance(value, str):
                 formatted_dict[key] = str(value).replace('[', '').replace(']', '')
-            if value == "None" or value == "[Needs Calculation]" or value == "[Needs Calc]":
+            if value == 'None':
                 formatted_dict[key] = None
+            if key == 'Formula':
+                if formatted_dict[key] == None:
+                    formatted_dict[key] = formatted_dict['Cost']
+                else:
+                    formatted_dict[key] = formatted_dict[key].replace('^', '**').replace('=', '')
 
-        # if "Cost" in formatted_dict:
-        #     if formatted_dict["Cost"] == "Needs Calculation" or formatted_dict["Cost"] == "Needs Calc":
-        #         formatted_dict["Cost"] = "None"
-        #     # Append the dictionary to the list
+        # Delete cost if has formula
+        if 'Formula' in formatted_dict:
+            del formatted_dict['Cost']
+
         json_objects.append(formatted_dict)
 
     # Write JSON objects to a JSON file
